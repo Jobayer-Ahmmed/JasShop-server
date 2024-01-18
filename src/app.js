@@ -6,7 +6,7 @@ import cardGet from "./routes/cardGetRoute/index.js"
 import cartPost from "./routes/cartPostRoute/index.js"
 import cartGet from "./routes/cartGetRoute/index.js"
 import cartDelete from "./routes/cartDeleteRoute/index.js"
-
+import beautyGet from "./routes/beautyGetRoute/index.js"
 
 const app =express()
 
@@ -19,6 +19,7 @@ app.use(cardGet)
 app.use(cartPost)
 app.use(cartGet)
 app.use(cartDelete)
+app.use(beautyGet)
 
 
 app.get("/health", (req, res)=>{
