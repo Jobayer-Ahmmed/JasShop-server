@@ -7,6 +7,7 @@ import cartPost from "./routes/cartPostRoute/index.js"
 import cartGet from "./routes/cartGetRoute/index.js"
 import cartDelete from "./routes/cartDeleteRoute/index.js"
 import beautyGet from "./routes/beautyGetRoute/index.js"
+import electronicsGet from "./routes/electronicsGetRoute/index.js"
 
 const app =express()
 
@@ -20,7 +21,7 @@ app.use(cartPost)
 app.use(cartGet)
 app.use(cartDelete)
 app.use(beautyGet)
-
+app.use(electronicsGet)
 
 app.get("/health", (req, res)=>{
     res.send("JasShop server is running")

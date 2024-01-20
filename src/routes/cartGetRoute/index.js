@@ -5,7 +5,6 @@ const router = express.Router()
 
 router.get("/cart", async(req, res)=>{
     const email = req.query.email
-    console.log(email)
     const result = await cartModel.find({email})
     res.send(result)
 })
